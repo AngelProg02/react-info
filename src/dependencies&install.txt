@@ -1,0 +1,20 @@
+npm install standard --> Reglas de lindar el Código
+Si añadimos -D lo añadirá como dependencia
+
+En el json que nos creará debemos crear una nueva regla,
+
+...},
+"eslintConfig":{
+    "extends": "./node_modules/standard/eslintrc.json"
+}
+
+Sino los componentes de react no los lindan bien
+Junto con añadir en el editor la extensión de "ESlint"
+
+Las suscripciones que hagamos a eventos, ej: window.addEventListener('pointerMove',handleMove), debemos limpiarlas (clean useEffect)
+En el return podemos devolver ese cleanUseEffect, es decir, se ejecuta cada vez que se "desmonte" el componente. Con un Ej:
+return () => {
+    window.removeEventListener('pointeremove',handleMove')
+}
+
+Con GetEventListener(window) en la consola podemos ver quién se ha suscrito y quien no. SOLO FUNCIONA EN CHROMIUM
