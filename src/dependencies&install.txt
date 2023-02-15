@@ -1,3 +1,4 @@
+npm create vite@latest --> Crear un nuevo proyecto y elegir las opciones
 npm install standard --> Reglas de lindar el Código
 Si añadimos -D lo añadirá como dependencia
 
